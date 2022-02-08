@@ -19,15 +19,17 @@ public class Startscreen extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1000, 550, 1); 
-        setBackground("Startscreen.jpg");
+        setBackground("Startscreen2.jpg");
         Peep dummy = new Peep();
         addObject(dummy, 750, 400);
         prepare();
+        
     }
     
     public void act(){
         titlemusic.playLoop();
         if (Greenfoot.isKeyDown("a")){
+            titlemusic.stop();
             Greenfoot.setWorld(new Backstory());
         }
         

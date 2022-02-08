@@ -8,7 +8,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Backstory extends World
 {
-    
+    GreenfootSound titlemusic = new GreenfootSound("eterna.mp3");
     /**
      * Constructor for objects of class Backstory.
      * 
@@ -30,6 +30,7 @@ public class Backstory extends World
     }
     
     public void act(){
+        titlemusic.playLoop();
         counter++;
         addObject(dummy, 250, 400);
         addObject(dummytwo, 190, 400);
@@ -90,6 +91,7 @@ public class Backstory extends World
         }
         
         if (counter == 1450){
+            titlemusic.stop();
             Greenfoot.setWorld(new FirstLevel());
         }
             
