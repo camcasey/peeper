@@ -35,11 +35,11 @@ public class Backstory extends World
         addObject(dummy, 250, 400);
         addObject(dummytwo, 190, 400);
         addObject(dummythree, 100, 400);
-        if (counter == 125){
+        if (counter == 50){
             addObject(txt, 260, 300);
             dummytwo.setLocation(dummytwo.getX() + 3, dummytwo.getY());
         }
-        if (counter == 200){
+        if (counter == 250){
             removeObject(txt);
             dummytwo.setLocation(dummytwo.getX() + 3, dummytwo.getY());
         }
@@ -57,7 +57,7 @@ public class Backstory extends World
             addObject(txts, 230, 300);
             dummytwo.setLocation(dummytwo.getX() + 5, dummytwo.getY());
         }
-        if (counter == 820) {
+        if (counter == 850) {
             removeObject(txts);
         }
         if (counter > 900) {
